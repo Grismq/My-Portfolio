@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .intro {
+            font-size: 2em;
+            text-align: center;
+        }
+
+        .intro span {
+            color: #9daf35;
+        }
+
+        .job-titles-wrapper {
+            display: inline;
+        }
+
+        .job-titles {
+            display: inline-block;
+            overflow: hidden;
+            vertical-align: bottom;
+            white-space: nowrap;
+            animation: changeText 10s infinite steps(1);
+            color: inherit; 
+        }
+
+        @keyframes changeText {
+           
+            0% { content: 'Data Analyst.'; }
+            20% { content: 'Data Engineer.'; }
+            40% { content: 'Power BI Developer.'; }
+            60% { content: 'Data Scientist.'; }
+        }
+
+        .job-titles:before {
+            content: 'Fresher.';
+            animation: changeContent 10s infinite steps(1);
+        }
+
+        @keyframes changeContent {
+            
+            0% { content: 'Data Analyst.'; }
+            20% { content: 'Data Engineer.'; }
+            40% { content: 'Power BI Developer.'; }
+            60% { content: 'Data Scientist.'; }
+        }
+        .submit-btn {
+    background-color: #34373a; /* Button background color */
+    color: #fff;               /* Button text color */
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.submit-btn .btn-icon {
+    margin-left: 8px;
+}
+
+.submit-btn:hover {
+    background-color: #090a0a; /* Button background color on hover */
+}
+       
+    </style>
+</head>
+<body class="main-content">
+    <header class="container header active" id="home">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="h-shape"></div>
+                <div class="image">
+                    <img src="img/Grisma Img.JPG" alt="">
+                </div>
+            </div>
+            <div class="right-header">
+                <h1 class="intro">
+                    Hi, I'm <span>Grisma DSouza.</span>
+                    <br>
+                    A <span class="job-titles-wrapper"><span class="job-titles"></span></span>
+                </h1>
+                <p style="text-align: justify;">
+                    Enthusiastic and detail-oriented recent graduate with a strong foundation in data analysis, statistics, and programming. 
+                    Seeking a Data Analyst/Data Engineer position to leverage analytical skills, proficiency in data manipulation tools, 
+                    and a passion for turning data into actionable insights. Committed to contributing to team success through innovative problem-solving and a proactive approach to learning.
+                </p>
+                <div class="btn-con">
+                    <a href="https://drive.google.com/file/d/1sodQ9artXojZAHSVkzGdbQLvlk-zG0_e/view?usp=sharing" class="main-btn">
+                        <span class="btn-text">Download CV</span>
+                        <span class="btn-icon"><i class="fas fa-download"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="container about" id="about">
+            <div class="main-title">
+                <h2>About <span>me</span><span class="bg-text">my stats</span></h2>
+            </div>
+            <!--<div class="about-container">
+                <div class="left-about">-->
+                    <br>
+                    <br>
+                    <h4>Information About me</h4>
+                    <br>
+                    <br>
+                    
+                    <p style="text-align: justify;">
+                        My name is Grisma DSouza, from Kodagu, currently residing in Bangalore, Karnataka. I am a motivated and detail-oriented individual, poised to graduate with a Masters in Computer Applications this August 2024. With a strong interest in data, I am actively seeking opportunities as a Data Analyst, Database Engineer, or similar roles such as Business Intelligence Analyst and Data Scientist. I gained practical experience as a Data Analyst and Power BI Developer intern for Decision Attic in Bangalore in 2022, where I honed my skills in data cleaning, analysis, and visualization.
+                    <br>
+                    My technical proficiency includes Python, SQL, Power BI, and Excel, and I have a solid understanding of statistical analysis and data manipulation. I am passionate about leveraging data to solve complex problems and committed to continuous learning and professional growth. I thrive in collaborative environments and enjoy tackling new challenges. Outside of my professional interests, I enjoy reading, and exploring new technologies, baking , sports which help me stay balanced and inspired.
+                    <br>
+                    <br>
+                    <br>
+                    <div class="btn-con">
+                        <a href="https://drive.google.com/file/d/1sodQ9artXojZAHSVkzGdbQLvlk-zG0_e/view?usp=sharing" class="main-btn">
+                            <span class="btn-text">Download CV</span>
+                            <span class="btn-icon"><i class="fas fa-download"></i></span>
+                        </a>
+                    </div>
+                </div>
+              <!--  <div class="right-about">
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">650+</p>
+                            <p class="small-text">Projects <br /> Completed</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">10+</p>
+                            <p class="small-text">Years of <br /> experience</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">300+</p>
+                            <p class="small-text">Happy <br /> Clients</p>
+                        </div>
+                    </div>
+                    <div class="about-item">
+                        <div class="abt-text">
+                            <p class="large-text">400+</p>
+                            <p class="small-text">Customer <br /> reviews</p>
+                        </div>
+                    </div>
+                </div>
+            </div>-->
+            <div class="about-stats">
+                <h4 class="stat-title">My Skills</h4>
+                <div class="progress-bars">
+                    <div class="progress-bar">
+                        <p class="prog-title">html5</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="html"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">css3</p>
+                        <div class="progress-con">
+                            <p class="prog-text">95%</p>
+                            <div class="progress">
+                                <span class="css"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">javascript</p>
+                        <div class="progress-con">
+                            <p class="prog-text">75%</p>
+                            <div class="progress">
+                                <span class="js"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">  Java</p>
+                        <div class="progress-con">
+                            <p class="prog-text">80%</p>
+                            <div class="progress">
+                                <span class="react"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">C</p>
+                        <div class="progress-con">
+                            <p class="prog-text">87%</p>
+                            <div class="progress">
+                                <span class="node"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Python</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">C++</p>
+                        <div class="progress-con">
+                            <p class="prog-text">70%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Power Bi</p>
+                        <div class="progress-con">
+                            <p class="prog-text">85%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">My SQL</p>
+                        <div class="progress-con">
+                            <p class="prog-text">88%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Microsoft Tools</p>
+                        <div class="progress-con">
+                            <p class="prog-text">90%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="progress-bar">
+                        <p class="prog-title">Azure Databricks</p>
+                        <div class="progress-con">
+                            <p class="prog-text">65%</p>
+                            <div class="progress">
+                                <span class="python"></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h4 class="stat-title">My Education </h4>
+            <div class="timeline">
+               
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <p class="tl-duration">2022-2024</p>
+                    <h5>Master of Computer Applications </h5>
+                    <p>
+                       <span>Atria Institute of Technology, Bengaluru </span> <br>
+                        <br><span>- Academic Score :84.36 </span>
+                    </p>
+                </div>
+                <div class="timeline-item">
+                    <div class="tl-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <p class="tl-duration">2019-2022</p>
+                    <h5>Bachelor of Computer Applications</h5>
+                    <p>
+                        <span>St. Aloysius (Autonomous) College, Mangaluru </span> <br>
+                        <br><span>- Academic Score :6.98 'A'</span>
+                    </p>
+                </div>
+         </section>
+         <section class="container experience-section" id="experience" style="text-align: center;">
+            <div class="main-title">
+                <h2>My <span>Experience</span><span class="bg-text">Career</span></h2>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="timeline" style="display: inline-block; text-align: left;">
+                <div class="timeline-item">
+                    <div class="tl-icon" style="text-align: center;">
+                        <i class="fas fa-project-diagram"></i> <!-- Changed icon to project related -->
+                    </div>
+                    <p class="tl-duration">Aug 2022 - Oct 2022</p>
+                    <h5>Data Analyst and Power BI Developer [Intern]</h5>
+                    <p>
+                        <span><i>Decision Attic, Bangalore</i></span> <br>
+                        <br>
+                        <br>
+                        <br>
+                        <p><span>Developed and maintained Power BI reports and dashboards for TVS Motor Company clients, addressing their
+                            specific requirements and enhancing data visualization. <br>
+                            <br>Utilized DAX (Data Analysis Expressions) functions to perform calculations and create custom measures for
+                            meaningful insights in Power BI. <br>
+                            <br>Collaborated with the team to analyze TVS data, identify trends, and present actionable insights to clients. <br>
+                            <br>I leveraged Azure Databricks to seamlessly upload my Power BI reports, enabling efficient data processing and insightful
+                            reporting capabilities.</span></p>
+                    </p>
+                </div>
+            </div>
+            <br>
+            <div class="btn-con">
+                <a href="https://drive.google.com/file/d/1OWZSyAN2aSTWcNJ6GFaNfhtDRzI6W0rI/view?usp=sharing" class="main-btn">
+                    <span class="btn-text">View Certificate</span>
+                    <span class="btn-icon"><i class="fas fa-download"></i></span>
+                </a>
+            </div> 
+        </section>
+        
+        <section class="container" id="portfolio">
+            <div class="main-title">
+                <h2>My <span>Projects</span><span class="bg-text">My Work</span></h2>
+            </div>
+           <!--- <p class="port-text">
+                Here is some of my work that I've done in various programming languages.
+            </p>-->
+            <div class="portfolios">
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port1.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Event-Management-System</h3>
+                        <div class="icons">
+                            <a href="https://github.com/Grismq/Event-Management-System.git" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port2.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>G-N-D-Ecommerce-Website</h3>
+                        <div class="icons">
+                            <a href="https://github.com/Grismq/G-N-D-Ecommerce-Website.git" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port3.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Next Gen System for Pet-health-Management</h3>
+                        <div class="icons">
+                            <a href="https://github.com/Grismq/Pet-health-Management.git" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port4.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>Spotify Analysis</h3>
+                        <div class="icons">
+                            <a href="https://github.com/Grismq/Spotify-Analysis.git" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>
+               <!---<div class="portfolio-item">
+                    <div class="image">
+                        <img src="img/port5.jpg" alt="">
+                    </div>
+                    <div class="hover-items">
+                        <h3>IOT Enabled Pet Feeding System</h3>
+                        <div class="icons">
+                            <a href="#" class="icon">
+                                <i class="fab fa-github"></i>
+                            </a>
+                           
+                        </div>
+                    </div>
+                </div>-->
+                
+               
+            </div>
+        </section>
+       
+        
+        <section class="container" id="blogs">
+            <div class="blogs-content">
+                <div class="main-title">
+                    <h2>My <span>Certificates</span><span class="bg-text">Training</span></h2>
+                </div>
+                <div class="blogs">
+                    <div class="blog">
+                        <img src="img/NPTEL.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>NPTEL ONLINE CERTIFICATE FOR DBMS</h4>
+                            <a href="https://drive.google.com/file/d/1fpxz-onTHwUh-GdctDm2H63zueh4XdMJ/view?usp=sharing" target="_blank" class="icon-link">
+                                <i class="fab fa-google-drive"> View Certificate</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/NPTEL.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>NPTEL ONLINE CERTIFICATE FOR JAVA PROGRAMMING</h4>
+                            <a href="https://drive.google.com/file/d/1qatHVxdcDv8LxtL1ziqkUJ7bcdYULZAd/view?usp=sharing" target="_blank" class="icon-link">
+                                <i class="fab fa-google-drive"> View Certificate</i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="blog">
+                        <img src="img/tech.jpg" alt="">
+                        <div class="blog-text">
+                            <h4>INTERNSHIP COMPLETION CERTIFICATE</h4>
+                            <a href="https://drive.google.com/file/d/1r8YDIPC4Ipnv71g67uf2DFjDl266kG3c/view?usp=sharing" target="_blank" class="icon-link">
+                                <i class="fab fa-google-drive"> View Certificate</i>
+                            </a>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <section class="container contact" id="contact">
+            <div class="contact-container">
+                <div class="main-title">
+                    <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+                </div>
+                <div class="contact-content-con">
+                    <div class="left-contact">
+                        <h4>Contact me here</h4>
+                        <p style="text-align: justify;">
+                            I am actively seeking new employment opportunities. If you have any positions or openings that align with my skills and experience, 
+                            please do not hesitate to contact me. I am eager to contribute and grow within a dynamic organization.
+                        </p>
+                        <div class="contact-info">
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>Location</span>
+                                </div>
+                                <p>
+                                    RT Nagar, Bengaluru
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-envelope"></i>
+                                    <span>Email</span>
+                                </div>
+                                <p>
+                                    <span>: grismaangel0@gmail.com</span>
+                                </p>
+                            </div>
+                           
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                    <span>Mobile Number</span>
+                                </div>
+                                <p>
+                                    <span>: 9108383132</span>
+                                </p>
+                            </div>
+                            <div class="contact-item">
+                                <div class="icon">
+                                    <i class="fas fa-globe-africa"></i>
+                                    <span>Languages</span>
+                                </div>
+                                <p>
+                                    <span>: English, Hindi, Kannada</span>
+                                </p>
+                            </div>
+                        </div>
+                        <div class="contact-icons">
+                            <div class="contact-icon">
+                                
+                               
+                                <a href="https://github.com/Grismq" target="_blank">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/grisma-dsouza-761403247" target="_blank">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-contact">
+                        <form id="contact-form" class="contact-form">
+                            <div class="input-control i-c-2">
+                                <input type="text" name="user_name" required placeholder="YOUR NAME">
+                                <input type="email" name="user_email" required placeholder="YOUR EMAIL">
+                            </div>
+                            <div class="input-control">
+                                <input type="text" name="subject" required placeholder="ENTER SUBJECT">
+                            </div>
+                            <div class="input-control">
+                                <textarea name="message" cols="15" rows="8" placeholder="Message Here..." required></textarea>
+                            </div>
+                            <div class="btn-con">
+                                <button type="submit" class="submit-btn">
+                                    <span class="btn-text">Submit</span>
+                                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                                </button>
+                            </div>
+                        </form>
+                       <br>
+                       <br>
+                        <div class="btn-con">
+                            <a href="https://drive.google.com/file/d/1sodQ9artXojZAHSVkzGdbQLvlk-zG0_e/view?usp=sharing" class="main-btn">
+                                <span class="btn-text">Download CV</span>
+                                <span class="btn-icon"><i class="fas fa-download"></i></span>
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="controls">
+        <div class="control active-btn" data-id="home" >
+            <i class="fas fa-home"></i>
+        </div>
+        <div class="control" data-id="about">
+            <i class="fas fa-user"></i>
+        </div>
+        <div class="control" data-id="experience">
+            <i class="fas fa-briefcase"></i>
+        </div>
+        <div class="control" data-id="portfolio">
+            <i class="fas fa-project-diagram"></i>
+        </div>
+        
+        <div class="control" data-id="blogs">
+            <i class="far fa-newspaper"></i>
+        </div>
+        <div class="control" data-id="contact">
+            <i class="fas fa-envelope-open"></i>
+        </div>
+    </div>
+    <div class="theme-btn">
+        <i class="fas fa-adjust"></i>
+    </div>
+    <script src="app.js"></script>
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("E2odKaCNCk48qpSII"); // Replace 'YOUR_USER_ID' with your EmailJS user ID
+        })();
+    </script>
+
+    <script type="text/javascript">
+        window.onload = function() {
+            document.getElementById('contact-form').addEventListener('submit', function(event) {
+                event.preventDefault();
+
+                // Send the email using EmailJS
+                emailjs.sendForm('service_0kdio65', 'template_c3ns139', this)
+                    .then(function() {
+                        alert('Your message has been sent!');
+                    }, function(error) {
+                        alert('Failed to send your message. Please try again.');
+                    });
+            });
+        };
+    </script>
+</body>
+</html>
